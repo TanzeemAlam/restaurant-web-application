@@ -9,6 +9,7 @@ import { ServiceComponent } from '../../services/service.component';
 export class MenuBarComponent implements OnInit {
 
   public title: String = "Menu Bar";
+  public menuItemsTitle: String[] = ['Snacks', 'Main Course', 'Sweets'];
   public snackItems: any [] = ['One','Two','Three'];
   public mainCourseItems: any [] = ['One','Two','Three'];
   public sweetItems: any [] = ['One','Two','Three'];
