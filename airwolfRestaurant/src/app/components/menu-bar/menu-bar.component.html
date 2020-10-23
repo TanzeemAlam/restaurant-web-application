@@ -1,2 +1,20 @@
 <app-navbar></app-navbar>
-<h2>Menu Bar</h2>
+<h1 class="text-center">{{ title }}</h1>
+<div id="menuDiv">
+  <div class="menuItems">
+    <ul *ngFor="let item of snackItems">
+      <li>{{ item }}</li>
+    </ul>
+  </div>
+  <div class="menuItems">
+    <ul *ngFor="let item of mainCourseItems">
+      <li>{{ item }}</li>
+    </ul>
+  </div>
+  <div class="menuItems">
+    <ul *ngFor="let item of sweetItems">
+      <li>{{ item }}</li>
+    </ul>
+  </div>
+</div>
+
