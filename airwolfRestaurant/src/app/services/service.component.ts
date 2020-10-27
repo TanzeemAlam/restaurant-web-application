@@ -9,22 +9,18 @@ import { MenuSections, SectionMenuList } from '../models/menu-bar.model';
 
 export class ServiceComponent {
 
-    private BASE_URL = "http://localhost:5000/api/restaurantmenu";
-    private MENU_SECTIONS_URL = "/listfiles";
-    private SECTIONS_MENU_LIST_URL = "/section";
-    private STARTERS_URL = "/starters";
-    private MAIN_COURSE_URL = "/maincourse";
-    private DESSERTS_URL = "/desserts";
-    private BEVERAGES_URL = "/beverages";
+    private LOCALHOST_URL = "https://localhost:5001";
+    private BASE_URL = "/api/restaurantmenu/file";
+    private MENU_SECTIONS_URL = "/menu.json";
+    private SECTION_URL_LIST = ["/starters.json","/maincourse.json","/desserts.json","/beverages.json"];
 
     constructor(private http:HttpClient){}
 
     public getMenuSections():Observable<MenuSections>{
-        return this.http.get<MenuSections>(`${this.BASE_URL + this.MENU_SECTIONS_URL}`);
+        return this.http.get<MenuSections>(`${this.LOCALHOST_URL + this.BASE_URL + this.MENU_SECTIONS_URL}`);
     }
 
-    public getSectionMenuList(input: String):Observable<SectionMenuList>{
-        
-        return this.http.get<SectionMenuList>(`${this.BASE_URL + this.SECTIONS_MENU_LIST_URL}`);
+    public getSectionMenuList(input: number):Observable<SectionMenuList>{
+        return this.http.get<SectionMenuList>(`${this.LOCALHOST_URL + this.BASE_URL + this.SECTION_URL_LIST[input]}`);
     }
 }
