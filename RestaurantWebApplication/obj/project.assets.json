@@ -12573,11 +12573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alisha\\Documents\\Azure\\restaurant-web-application\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\alisha\\Documents\\Azure\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
       "projectName": "RestaurantWebApplication",
-      "projectPath": "C:\\Users\\alisha\\Documents\\Azure\\restaurant-web-application\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
+      "projectPath": "C:\\Users\\alisha\\Documents\\Azure\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
       "packagesPath": "C:\\Users\\alisha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alisha\\Documents\\Azure\\restaurant-web-application\\RestaurantWebApplication\\obj\\",
+      "outputPath": "C:\\Users\\alisha\\Documents\\Azure\\RestaurantWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
