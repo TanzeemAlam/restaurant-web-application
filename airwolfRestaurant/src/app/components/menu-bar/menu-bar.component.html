@@ -5,30 +5,30 @@
   <div id="menuDiv">
     <div class="menuItems">
       <img class="menuImages" src="../../../assets/snackImage.jpg">
-      <h4>{{ menuItemsTitle[0] }}</h4>
+      <h4>{{ this.menuResult.sections[0].name }}</h4>
       <ul *ngFor="let item of snackItems">
-        <li>{{ item }}</li>
+        <li>{{ item.name }}</li>
       </ul>
     </div>
     <div class="menuItems">
       <img class="menuImages" src="../../../assets/mainCourseImage.jpg">
-      <h4>{{ menuItemsTitle[1] }}</h4>
+      <h4>{{ this.menuResult.sections[1].name }}</h4>
       <ul *ngFor="let item of mainCourseItems">
-        <li>{{ item }}</li>
+        <li>{{ item.name }}</li>
       </ul>
     </div>
     <div class="menuItems">
       <img class="menuImages" src="../../../assets/sweetImage.jpg">
-      <h4>{{ menuItemsTitle[2] }}</h4>
-      <ul *ngFor="let item of sweetItems">
-        <li>{{ item }}</li>
+      <h4>{{ this.menuResult.sections[2].name }}</h4>
+      <ul *ngFor="let item of dessertItems">
+        <li>{{ item.name }}</li>
       </ul>
     </div>
     <div class="menuItems">
       <img class="menuImages" src="../../../assets/sweetImage.jpg">
-      <h4>{{ menuItemsTitle[3] }}</h4>
-      <ul *ngFor="let item of sweetItems">
-        <li>{{ item }}</li>
+      <h4>{{ this.menuResult.sections[3].name }}</h4>
+      <ul *ngFor="let item of beverageItems">
+        <li>{{ item.name }}</li>
       </ul>
     </div>
   </div>
