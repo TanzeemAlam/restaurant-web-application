@@ -13,7 +13,6 @@ namespace RestaurantWebApplication.Controllers
     {
         private readonly IOptions<MyConfig> config;
 
-
         public RestaurantMenuController(IOptions<MyConfig> config)
         {
             this.config = config;
@@ -23,6 +22,7 @@ namespace RestaurantWebApplication.Controllers
         public async Task<IActionResult> DisplayFile(string fileName)
         {
             MemoryStream ms = new MemoryStream();
+
             if (CloudStorageAccount.TryParse(config.Value.StorageConnection, out CloudStorageAccount storageAccount))
             {
                 CloudBlobClient BlobClient = storageAccount.CreateCloudBlobClient();
@@ -37,7 +37,6 @@ namespace RestaurantWebApplication.Controllers
                         string contents = blob.DownloadTextAsync().Result;
                         return Content(contents);
                     }
-
                     else
                     {
                         return Content("File does not exist");
