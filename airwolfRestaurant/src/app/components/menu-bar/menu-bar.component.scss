@@ -1,15 +1,35 @@
 #menuDiv{
-    width: 100%;
-    padding-top: 50px;
-    padding-left: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .menuItems{
-    width: 30%;
-    float: left;
+  width: 30%;
+  float: left;
 }
 
 .menuImages{
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top:-100%; right:-100%; left:-100%; bottom:-100%;
+    margin:auto;
+    z-index:0;
+}
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
