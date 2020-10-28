@@ -1,33 +1,33 @@
 <app-navbar></app-navbar>
 <div class="loader" *ngIf="isLoading"></div>
 <div *ngIf="!isLoading">
-  <h1 class="text-center">{{ title }}</h1>
+  <h1 class="text-center menuTitle">{{ title }}</h1>
   <div id="menuDiv">
-    <div class="menuItems">
-      <img class="menuImages" src="../../../assets/snackImage.jpg">
+    <div class="menuSections">
+      <img class="menuImages" src="../../../assets/startersImage.jpg">
       <h4>{{ this.menuResult.sections[0].name }}</h4>
-      <ul *ngFor="let item of snackItems">
+      <ul class="sectionItems" *ngFor="let item of snackItems">
         <li>{{ item.name }}</li>
       </ul>
     </div>
-    <div class="menuItems">
+    <div class="menuSections">
       <img class="menuImages" src="../../../assets/mainCourseImage.jpg">
       <h4>{{ this.menuResult.sections[1].name }}</h4>
-      <ul *ngFor="let item of mainCourseItems">
+      <ul class="sectionItems" *ngFor="let item of mainCourseItems">
         <li>{{ item.name }}</li>
       </ul>
     </div>
-    <div class="menuItems">
-      <img class="menuImages" src="../../../assets/sweetImage.jpg">
+    <div class="menuSections">
+      <img class="menuImages" src="../../../assets/dessertsImage.jpg">
       <h4>{{ this.menuResult.sections[2].name }}</h4>
-      <ul *ngFor="let item of dessertItems">
+      <ul class="sectionItems" *ngFor="let item of dessertItems">
         <li>{{ item.name }}</li>
       </ul>
     </div>
-    <div class="menuItems">
-      <img class="menuImages" src="../../../assets/sweetImage.jpg">
+    <div class="menuSections">
+      <img class="menuImages" src="../../../assets/beveragesImage.jpg">
       <h4>{{ this.menuResult.sections[3].name }}</h4>
-      <ul *ngFor="let item of beverageItems">
+      <ul class="sectionItems" *ngFor="let item of beverageItems">
         <li>{{ item.name }}</li>
       </ul>
     </div>

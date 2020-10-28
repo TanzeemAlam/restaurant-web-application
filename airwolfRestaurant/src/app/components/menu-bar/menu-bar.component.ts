@@ -11,13 +11,11 @@ export class MenuBarComponent implements OnInit {
 
   public isLoading: boolean = true;
   public title: String = "Menu Bar";
-  public menuItemsTitle: String[] = ['Starters', 'Main Course', 'Desserts', 'Beverages'];
   public snackItems: Item [];
   public mainCourseItems: Item [];
   public dessertItems: Item [];
   public beverageItems: Item [];
   public menuResult: MenuSections;
-  public sectionMenuList: SectionMenuList[];
 
   constructor(private httpService: ServiceComponent) { }
 
@@ -34,7 +32,7 @@ export class MenuBarComponent implements OnInit {
     this.loadMainCourseItems();
     this.loadDessertItems();
     this.loadBeverageItems();
-    setTimeout(() => { this.isLoading = false }, 5000);
+    setTimeout(() => { this.isLoading = false }, 4000);
   }
 
   private loadSnackItems(){

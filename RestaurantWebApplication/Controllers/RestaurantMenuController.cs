@@ -18,7 +18,7 @@ namespace RestaurantWebApplication.Controllers
             this.config = config;
         }
 
-        [HttpGet("DisplayFile/{fileName}")]
+        [HttpGet("File/{fileName}")]
         public async Task<IActionResult> DisplayFile(string fileName)
         {
             MemoryStream ms = new MemoryStream();
